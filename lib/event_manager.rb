@@ -1,6 +1,10 @@
 require 'csv'
 require 'google/apis/civicinfo_v2'
 
+template_letter = File.read('form_letter.html')
+
+
+
 def clean_zipcode(zipcode)   
     # if zipcode.nil?
     #     zipcode = "00000"
